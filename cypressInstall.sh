@@ -4,7 +4,12 @@ cd $1
 # Initialize git and .gitignore
 git init
 touch .gitignore
-echo "cypress.env.json\ncypress/downloads/\nnode_modules/" > .gitignore
+echo '{
+    cypress.env.json
+    node_modules/
+    cypress/downloads/
+    cypress/screenshots/
+}' > .gitignore
 # Initialize NPM
 npm init -y
 # Install Cypress (if a version is specified, it will be installed; otherwise, the latest version will be installed).
