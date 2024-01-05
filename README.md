@@ -87,19 +87,20 @@ After install the Docker, it's time for install Cypress
 2. Run `./cypressInstall.sh name-of-your-project`
 3. Choose this options for creating your directories
    <p align="center">
-   <img src="step1.png"/ width='200px' alt="Step 1">
+   <img src="step1.png"/ width='600px' alt="Step 1">
    </p>
    <p align="center">
-   <img src="step2.png"/ width='200px' alt="Step 2">
+   <img src="step2.png"/ width='600px' alt="Step 2">
    </p>
    <p align="center">
-   <img src="step3.png"/ width='200px' alt="Step 3">
+   <img src="step3.png"/ width='600px' alt="Step 3">
    </p>
    <p align="center">
-   <img src="step4.png"/ width='200px' alt="Step 4">
+   <img src="step4.png"/ width='600px' alt="Step 4">
    </p>
 5. Close the Cypress.
 6. Download the `afterCypressInstall.sh` for others configurations for running the Cypress with Visual Regression Tracker (VRT)
+7. Run `./afterCypressInstall.sh`
 
 # Test
 
