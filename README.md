@@ -20,6 +20,7 @@ Open PowerShell and type the ```wsl``` command, if it doesn't work restart your 
 ```powershell
 wsl --install Ubuntu
 ```
+Choose one username and passaword in your Ubuntu
 
 ### **Assign the default version of WSL to version 2**
 
@@ -31,8 +32,7 @@ wsl --set-default-version 2
 
 ### Update Ubuntu packages
 
-1. Set up a username and password in your Ubuntu
-2. Update Ubuntu packages by running `sudo apt update && sudo apt upgrade -y`
+1. Update Ubuntu packages by running `sudo apt update && sudo apt upgrade -y`
 
 ### Install docker on Ubuntu
 
