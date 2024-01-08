@@ -15,6 +15,12 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 Open PowerShell and type the ```wsl``` command, if it doesn't work restart your machine.
 
+### Install Ubuntu in your machine
+
+```powershell
+wsl --install Ubuntu
+```
+
 ### **Assign the default version of WSL to version 2**
 
 Version 1 of WSL is the default at the moment, assign the default version to version 2, so all installed Linux distributions will default to version 2. Execute the command with PowerShell:
