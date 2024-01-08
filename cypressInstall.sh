@@ -7,6 +7,7 @@ cd $1
 git init
 touch .gitignore
 echo '{
+    .env
     cypress.env.json
     node_modules/
     cypress/downloads/
