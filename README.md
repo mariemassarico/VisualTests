@@ -26,7 +26,7 @@ wsl --set-default-version 2
 1. Set up a username and password in your Ubuntu
 2. Update Ubuntu packages by running `sudo apt update && sudo apt upgrade -y`
 
-### Install docker on Unbuntu
+### Install docker on Ubuntu
 
 Install the prerequisites:
 
@@ -84,7 +84,7 @@ After install the Docker, it's time for install Cypress
 ## Usage
 
 1. Download the `cypressInstall.sh` file in your root directory where the project will running
-2. Run `./cypressInstall.sh name-of-your-project`
+2. Run `./cypressInstall.sh 1name-of-your-project 2your-name 3version-cypress(opitional)`
 3. Choose this options for creating your directories
    <p align="center">
    <img src="step1.png"/ width='600px' alt="Step 1">
@@ -99,8 +99,7 @@ After install the Docker, it's time for install Cypress
    <img src="step4.png"/ width='600px' alt="Step 4">
    </p>
 5. Close the Cypress.
-6. Download the `afterCypressInstall.sh` for others configurations for running the Cypress with Visual Regression Tracker (VRT)
-7. Run `./afterCypressInstall.sh`
-
-# Test
+6. Enter in your directory
+7. Download the `afterCypressInstall.sh` for others configurations for running the Cypress with Visual Regression Tracker (VRT)
+8. Run `./afterCypressInstall.sh`
 
