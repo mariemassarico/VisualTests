@@ -21,6 +21,7 @@ Open PowerShell and type the ```wsl``` command, if it doesn't work restart your 
 wsl --install Ubuntu
 ```
 Choose one username and passaword in your Ubuntu
+Close your powershell
 
 ### **Assign the default version of WSL to version 2**
 
