@@ -91,7 +91,7 @@ services:
       timeout: 120s
       retries: 10
 volumes:
-  postgres_data:' > docker-compose.yaml
+  postgres_data:' >docker-compose.yaml
 
 # create the env.json
 
@@ -131,7 +131,7 @@ BODY_PARSER_JSON_LIMIT="5mb"
 POSTGRES_PORT=5432
 POSTGRES_USER=postgres
 POSTGRES_PASSWORD=postgres
-POSTGRES_DB=vrt_db' > .env
+POSTGRES_DB=vrt_db' >.env
 
 # Changes in Cypress configuration for running
 
@@ -151,12 +151,13 @@ module.exports = defineConfig({
       addVisualRegressionTrackerPlugin(on, config)
     }
   }
-})' > cypress.config.js
+})' >cypress.config.js
 
 # create commands and add VRT plugin in this project
-rm cypress/support/*
+rm cypress/support/commands.js e2e.js
+cd cypress/support
 
-echo 'Cypress.Commands.add('vrt', title => {
+echo "Cypress.Commands.add('vrt', title => {
     cy.vrtStart()
     cy.vrtTrack(title)
     cy.vrtStop()
@@ -167,12 +168,12 @@ Cypress.Commands.add('login', (yourURL,email, senha) => {
         cy.visit(yourURL)
         cy.get('.redirect-button').click()
         cy.get('#username').type(email)
-        cy.get('#password').type(senha, { log: false })
+        cy.get('#password').type(senha, {log: false})
         cy.get('#kc-login').click()
     })
-})' > cypress/support/commands.js
+})" >commands.js
 
-echo 'import {
+echo "import {
     addVrtTrackCommand,
     addVrtStartCommand,
     addVrtStopCommand,
@@ -186,4 +187,4 @@ addVrtTrackCommand()
 addVrtTrackBufferCommand()
 addVrtTrackBase64Command()
 
-import './commands'' > cypress/support/e2e.js
+import './commands'" >e2e.js
