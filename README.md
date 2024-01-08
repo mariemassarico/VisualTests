@@ -25,6 +25,10 @@ Close your powershell
 
 ### **Assign the default version of WSL to version 2**
 
+Open your Ubuntu
+```powershell
+wsl
+```
 Version 1 of WSL is the default at the moment, assign the default version to version 2, so all installed Linux distributions will default to version 2. Execute the command with PowerShell:
 
 ```powershell
