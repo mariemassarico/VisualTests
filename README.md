@@ -25,10 +25,6 @@ Close your powershell
 
 ### **Assign the default version of WSL to version 2**
 
-Open your Ubuntu
-```powershell
-wsl
-```
 Version 1 of WSL is the default at the moment, assign the default version to version 2, so all installed Linux distributions will default to version 2. Execute the command with PowerShell:
 
 ```powershell
@@ -37,14 +33,16 @@ wsl --set-default-version 2
 
 ### Update Ubuntu packages
 
-1. Update Ubuntu packages by running `sudo apt update && sudo apt upgrade -y`
+1. Update Ubuntu packages by running
+```powershell
+sudo apt update && sudo apt upgrade -y
+```
 
 ### Install docker on Ubuntu
 
 Install the prerequisites:
 
 ```bash
-sudo apt update && sudo apt upgrade
 sudo apt remove docker docker-engine docker.io containerd runc
 sudo apt-get install \
     apt-transport-https \
