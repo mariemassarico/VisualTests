@@ -1,4 +1,6 @@
-# Backend
+# Visual Regression Tracker with Cypress
+
+## Prerequisites for this project
 
 ## Environment configuration
 
@@ -77,11 +79,11 @@ Start the Docker service:
 sudo service docker start
 ```
 
-# Install Cypress
+## Install Cypress
 
-After install the Docker, it's time for install Cypress
+After install the Docker, it's time for install Cypress and Visual Regression Tracker (VRT)
 
-## Usage
+### Usage
 
 1. Download the `cypressInstall.sh` file in your root directory where the project will running
 2. Run `./cypressInstall.sh 1name-of-your-project 2your-name 3version-cypress(opitional)`
@@ -100,6 +102,6 @@ After install the Docker, it's time for install Cypress
    </p>
 5. Close the Cypress.
 6. Enter in your directory
-7. Download the `afterCypressInstall.sh` for others configurations for running the Cypress with Visual Regression Tracker (VRT)
+7. Download the `afterCypressInstall.sh` for others configurations for running the Cypress with VRT
 8. Run `./afterCypressInstall.sh`
 
