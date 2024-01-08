@@ -153,6 +153,10 @@ module.exports = defineConfig({
   }
 })' >cypress.config.js
 
+# Create test directories
+
+mkdir cypress/e2e
+
 # create commands and add VRT plugin in this project
 rm cypress/support/commands.js e2e.js
 cd cypress/support
